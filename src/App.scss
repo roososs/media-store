@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@600&family=Lobster&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+.title-page{
+  // font-family: 'Lobster', cursive;
+  color: #0c2350;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 3rem;
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.card.download{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  font-size: 30px;
+  border: 2px dashed #ddd;
+  cursor: pointer;
+}
+
+.card{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  .img-card{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #081735;
+    font-size: 24px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .info-card{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 1px rgba(64,60,67,.24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    .title{
+      font-size: 16px;
+    }
+    .secondary-title{
+      font-size: 13px;
+      color: #bbb
+    }
+    .download-icon{
+      font-size: 18px;
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
+
+.card.red .img-card{
+  color: rgb(214, 38, 38);
+}
+
+.card.green .img-card{
+  color: rgb(38 214 111);
+}
+
+.card.orange .img-card{
+  color: rgb(237 82 23);
+}
+
